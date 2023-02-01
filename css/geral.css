@@ -1,0 +1,65 @@
+:root{
+    --terra-bg: radial-gradient(rgb(21, 18, 36) 30%, rgb(18, 20, 48) 95%);
+}
+
+@font-face {
+    font-family: 'norm';
+    src: url(fonts/Orbitron-Regular.ttf);
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'norm';
+}
+body, html{
+    width: 100%;
+    height: 100%;
+}
+
+/* .edit1{
+    border: 1px solid red;
+}
+.edit2{
+    border: 1px solid green;
+}
+.edit3{
+    border: 1px solid white;
+}
+.edit4{
+    border: 1px solid yellow;
+}
+.edit5{
+    border: 1px solid magenta;
+} */
+
+.terra{
+    width: 100%;
+    height: 100%;
+    background-image: var(--terra-bg);
+}
+
+.titulo{
+    margin-top: 50px;
+    font-size: 50px;
+    font-family: 'norm';
+    font-weight: bold;
+}
+
+.bk-midle{
+    background-image: radial-gradient(rgba(21, 18, 36, 0.5) 30%, rgba(30, 48, 95, 0.5) 95%);
+    border-radius: 20px;
+}
+
+.speak{
+    background-image: radial-gradient(rgba(21, 18, 36, 0.5) 30%, rgba(66, 11, 80, 0.5) 65%);
+    box-shadow: 0px 0px 20px 10px rgb(66, 11, 80) inset;
+    border-radius: 10px;
+}
+
+.speak1{
+    background-image: radial-gradient(rgba(21, 18, 36, 0.5) 30%, rgba(121, 76, 17, 0.5) 65%);
+    box-shadow: 0px 0px 20px 10px rgb(121, 76, 17) inset;
+    border-radius: 10px;
+}

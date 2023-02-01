@@ -1,2 +1,2 @@
 # Lore
- Uma história que quero escrever com efeitos
+ Só uma história que quero escrever com efeitos pra uns amigos = )

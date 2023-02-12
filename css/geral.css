@@ -3,15 +3,20 @@
 }
 
 @font-face {
+    font-family: 'titulo';
+    src: url(fonts/Guardians.ttf);
+}
+@font-face {
     font-family: 'norm';
-    src: url(fonts/Orbitron-Regular.ttf);
-  }
+    src: url(fonts/Roboto-Medium.ttf);
+}
 
 * {
     margin: 0;
     padding: 0;
     color: white;
     font-family: 'norm';
+    word-spacing: 5px;
 }
 html {
     min-height: 100vh;
@@ -45,8 +50,16 @@ body {
 .titulo{
     margin-top: 50px;
     font-size: 50px;
-    font-family: 'norm';
     font-weight: bold;
+    font-family: 'titulo';
+}
+.conteudo{
+    font-size: 1rem;
+}
+@media only screen and (max-width: 600px) {
+    .conteudo{
+        font-size: 0.7rem;
+    }
 }
 
 .bk-midle{

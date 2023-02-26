@@ -18,6 +18,15 @@
     font-family: 'norm';
     word-spacing: 5px;
 }
+
+/* DEBUG */
+/* * {
+    background: #000 !important;
+    color: #0f0 !important;
+    outline: solid #f00 1px !important;
+} */
+/* DEBUG */
+
 html {
     min-height: 100vh;
 }
@@ -41,10 +50,19 @@ body {
     border: 1px solid magenta;
 } */
 
+.hud-bg{
+    background-color: black;
+}
+
 .terra{
     width: 100%;
     height: 100%;
     background-image: var(--terra-bg);
+}
+
+.pagination-container {
+    width: 100%;
+    margin: 0px !important;
 }
 
 .titulo{

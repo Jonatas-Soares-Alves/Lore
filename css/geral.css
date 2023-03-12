@@ -1,5 +1,7 @@
 :root{
     --terra-bg: radial-gradient(rgb(21, 18, 36) 30%, rgb(18, 20, 48) 95%);
+    --light-blue-color: rgb(0, 238, 255);
+    --dark-blue-color: rgb(28, 109, 202);
 }
 
 @font-face {
@@ -83,20 +85,31 @@ body {
     .conteudo{
         font-size: 0.9rem;
     }
-  }
+}
 
-.pagination-btn{
-    padding: 0px 25px;
-    margin: 10px 5px;
+.menu-btn{
     display: inline;
     text-align: center;
     background: none;
-    color: rgb(0, 238, 255);
-    border: 1px solid rgb(28, 109, 202);
+    color: var(--light-blue-color);
+    border: 1px solid var(--dark-blue-color);
     border-radius: 5px;
     background-image: radial-gradient(rgba(0, 0, 0, 0) 30%, rgba(23, 57, 151, 0.5) 65%);
-    box-shadow: 0px 0px 5px 2px rgb(28, 109, 202) inset;
+    box-shadow: 0px 0px 5px 2px var(--dark-blue-color) inset;
 }
+.menu-font-color{
+    color: var(--light-blue-color);
+}
+.pagination-btn{
+    padding: 0px 25px;
+    margin: 10px 5px;
+}
+
+.config-btn{
+    padding: 5px 12px;
+    border-radius: 100%;
+}
+
 .page-input{
     width: 10%;
     min-width: 70px;

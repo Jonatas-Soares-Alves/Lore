@@ -1,6 +1,7 @@
 var oldpage = 1;
 var currentPage = 1;
 var maxPages = 1;
+const url = window.location.href;
 
 function changePage(){
     console.log('-------------------');
@@ -16,6 +17,13 @@ function changePage(){
 $(document).ready(function(){
     maxPages = $('.page').length;
     console.log(maxPages);
+
+    if(!url.includes('jonatas-soares-alves.github.io') && url.includes('http://127.0.0.1/')){
+        // $('.github-enviroment').remove();
+        $('link.github-enviroment').remove();
+        $('img.github-enviroment').remove();
+        $('script.github-enviroment').attr("disabled","disabled");
+    }
 
     $('.btn-prev').click(function() {
         if (currentPage > 1) {

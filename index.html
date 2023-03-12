@@ -1,4 +1,4 @@
-<!--  -->
+<!-- https://jonatas-soares-alves.github.io/Lore/ -->
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -6,84 +6,109 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="/css/geral.css"> -->
-    <link rel="stylesheet" href="https://jonatas-soares-alves.github.io/Lore/css/geral.css">
+
+    <link class="local-enviroment" rel="stylesheet" href="/css/geral.css">
+    <link class="github-enviroment" rel="stylesheet" href="https://jonatas-soares-alves.github.io/Lore/css/geral.css">
+
+    <link rel="stylesheet" href="https://kit.fontawesome.com/d0a7405ea4.css" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Lore</title>
 </head>
     <body>
+        <script src="https://kit.fontawesome.com/d0a7405ea4.js" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         
         <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
-        <!-- <script type="text/javascript" src="/js/geral.js"></script> -->
-        <script type="text/javascript" src="https://jonatas-soares-alves.github.io/Lore/js/geral.js"></script>
+        <!-- <script class="local-enviroment" type="text/javascript" src="/js/geral.js"></script> -->
+        <script class="github-enviroment" type="text/javascript" src="https://jonatas-soares-alves.github.io/Lore/js/geral.js"></script>
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="config-menu" tabindex="-1" role="dialog" aria-labelledby="config-menu" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content menu-font-color">
+              <div class="modal-body terra">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                <h5 class="modal-title text-center mb-4" id="exampleModalLongTitle">Opções</h5>
+                <div class="mb-3">
+                  <p>
+                    TESTE .......................................................................................
+                  </p>
+                </div>
+                
+                <button type="button" class="pagination-btn" data-dismiss="modal">Close</button>
+                <button type="button" class="pagination-btn">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
         
         <section class="page">
           <div class="hud-bg w-100 pt-3">
-            <div class="row justify-content-center pagination-container edit1">
-              <button class="btn-prev pagination-btn"><</button>
-              <input class="page-input pagination-btn" type="number" min="1" value="1">
-              <button class="btn-next pagination-btn">></button>
+            <div class="row pagination-container edit1">
+              <div class="col-4">
+                <button type="button" data-toggle="modal" data-target="#config-menu" class="menu config-btn menu-btn"><i class="fa-sharp fa-solid fa-bars menu-font-color"></i></button>
+              </div>
+              <div class="col-12 col-md-4 d-flex justify-content-center">
+                <button class="btn-prev pagination-btn menu-btn"><</button>
+                <input class="page-input pagination-btn menu-btn" type="number" min="1" value="1">
+                <button class="btn-next pagination-btn menu-btn">></button>
+              </div>
+              <div class="col-4">
+              </div>
             </div>
           </div>
           <div class="w-100">
-            <!-- <img class="w-100 baar" src="/img/baar2.png" alt="Panda Destruidor"> -->
-            <img class="w-100 baar" src="https://jonatas-soares-alves.github.io/Lore/img/baar2.png" alt="Panda Destruidor">
+            <img class="w-100 baar local-enviroment" src="/img/baar2.png" alt="Panda Destruidor">
+            <img class="w-100 baar github-enviroment" src="https://jonatas-soares-alves.github.io/Lore/img/baar2.png" alt="Panda Destruidor">
           </div>
           <div class="terra edit4" id="pg1">
               <div class="container-fluid">
                 <div class="row justify-content-center pt-4">
                   <div class="col-11 col-md-8 edit2 bk-midle pb-3 px-md-5 px-2 my-5 mx-md-0">
+
                     <h2 class="text-center mb-5 titulo">Titulo</h2>
                     
                     <div class="conteudo">
                         <p class="speak p-1 p-md-3">
-                        <b>Personagem1:</b> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda temporibus laborum impedit labore quae iure, quas consequatur laboriosam. Unde odit omnis doloribus reprehenderit odio accusantium provident placeat necessitatibus sunt dolorum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta explicabo similique ad iure quam totam, necessitatibus fuga a ducimus autem, cupiditate tenetur possimus maxime expedita. Quisquam facilis nulla ducimus omnis!
+                          <b>Personagem1:</b> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda temporibus laborum impedit labore quae iure, quas consequatur laboriosam. Unde odit omnis doloribus reprehenderit odio accusantium provident placeat necessitatibus sunt dolorum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta explicabo similique ad iure quam totam, necessitatibus fuga a ducimus autem, cupiditate tenetur possimus maxime expedita. Quisquam facilis nulla ducimus omnis!
                         </p>
-
                         <p class="speak1 p-1 p-md-3">
-                            <b>Personagem2:</b> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui, fugit quod adipisci itaque temporibus eligendi laboriosam laudantium ipsam voluptatibus accusamus placeat distinctio eius sed dolore voluptates maxime minima vitae? Sunt?
+                          <b>Personagem2:</b> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui, fugit quod adipisci itaque temporibus eligendi laboriosam laudantium ipsam voluptatibus accusamus placeat distinctio eius sed dolore voluptates maxime minima vitae? Sunt?
                         </p>
-
                         <p>
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui, fugit quod adipisci itaque temporibus eligendi laboriosam laudantium ipsam voluptatibus accusamus placeat distinctio eius sed dolore voluptates maxime minima vitae? Sunt?
                         </p>
-
                         <p>
                           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui, fugit quod adipisci itaque temporibus eligendi laboriosam laudantium ipsam voluptatibus accusamus placeat distinctio eius sed dolore voluptates maxime minima vitae? Sunt?
                         </p>
-
                         <p>
                           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui, fugit quod adipisci itaque temporibus eligendi laboriosam laudantium ipsam voluptatibus accusamus placeat distinctio eius sed dolore voluptates maxime minima vitae? Sunt?
                         </p>
-
                         <p>
                           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui, fugit quod adipisci itaque temporibus eligendi laboriosam laudantium ipsam voluptatibus accusamus placeat distinctio eius sed dolore voluptates maxime minima vitae? Sunt?
                         </p>
-
                         <p>
                           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui, fugit quod adipisci itaque temporibus eligendi laboriosam laudantium ipsam voluptatibus accusamus placeat distinctio eius sed dolore voluptates maxime minima vitae? Sunt?
                         </p>
-
                         <p>
                           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui, fugit quod adipisci itaque temporibus eligendi laboriosam laudantium ipsam voluptatibus accusamus placeat distinctio eius sed dolore voluptates maxime minima vitae? Sunt?
                         </p>
-
                         <p>
                           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui, fugit quod adipisci itaque temporibus eligendi laboriosam laudantium ipsam voluptatibus accusamus placeat distinctio eius sed dolore voluptates maxime minima vitae? Sunt?
                         </p>
-
                         <p>
                           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui, fugit quod adipisci itaque temporibus eligendi laboriosam laudantium ipsam voluptatibus accusamus placeat distinctio eius sed dolore voluptates maxime minima vitae? Sunt?
                         </p>
-
                         <p>
                           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui, fugit quod adipisci itaque temporibus eligendi laboriosam laudantium ipsam voluptatibus accusamus placeat distinctio eius sed dolore voluptates maxime minima vitae? Sunt?
                         </p>
-                        
                     </div>
+
                   </div>
                 </div>
               </div>
@@ -134,35 +159,27 @@
                       <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro voluptatum consequuntur, quisquam assumenda fugit, iste distinctio vel deleniti numquam repudiandae dolorum atque repellendus. Incidunt nemo soluta rem eveniet id ullam?Lorem ipsum dolor sit amet, consectetur adipisicing elit. A commodi veritatis modi quam aliquid aliquam officia nisi perspiciatis reiciendis dolorum minus ipsam eveniet corrupti, dolor blanditiis, inventore ea, architecto nihil.lore Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta tempore, sequi voluptate illum officiis molestiae iure quas consectetur quaerat eligendi aut. Rem natus omnis quaerat cumque atque sapiente debitis fuga.
                       </p>
-
                       <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet consectetur sequi quasi praesentium repudiandae doloremque quia corporis totam, illum culpa aliquam accusamus aut temporibus officiis odit deleniti facere commodi? Consequuntur.lore
                       </p>
-
                       <p>
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum tempora dolor dicta autem in delectus, ratione aut ipsum inventore quibusdam, nisi laboriosam illo repellendus cum eveniet distinctio maxime atque nihil. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, alias culpa odit voluptas dignissimos perspiciatis eveniet provident repellat illo omnis dolores, sapiente laborum! Fuga incidunt iusto ipsa dolores ea id. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi unde minima minus corrupti, est architecto, ipsam ex sit ipsum rerum reiciendis voluptatibus molestiae quis exercitationem, obcaecati adipisci inventore optio! Natus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias saepe doloremque laborum autem quo perferendis error, beatae commodi nihil, iusto voluptatibus, ratione sapiente culpa rem debitis vitae asperiores reprehenderit? Quisquam? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos corporis inventore molestias magni alias hic, sequi natus iusto recusandae molestiae asperiores eius sed? Nesciunt a magni dignissimos aperiam odio amet.
                       </p>
-
                       <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro voluptatum consequuntur, quisquam assumenda fugit, iste distinctio vel deleniti numquam repudiandae dolorum atque repellendus. Incidunt nemo soluta rem eveniet id ullam?Lorem ipsum dolor sit amet, consectetur adipisicing elit. A commodi veritatis modi quam aliquid aliquam officia nisi perspiciatis reiciendis dolorum minus ipsam eveniet corrupti, dolor blanditiis, inventore ea, architecto nihil.lore Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta tempore, sequi voluptate illum officiis molestiae iure quas consectetur quaerat eligendi aut. Rem natus omnis quaerat cumque atque sapiente debitis fuga.
                       </p>
-
                       <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet consectetur sequi quasi praesentium repudiandae doloremque quia corporis totam, illum culpa aliquam accusamus aut temporibus officiis odit deleniti facere commodi? Consequuntur.lore
                       </p>
-
                       <p>
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum tempora dolor dicta autem in delectus, ratione aut ipsum inventore quibusdam, nisi laboriosam illo repellendus cum eveniet distinctio maxime atque nihil. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, alias culpa odit voluptas dignissimos perspiciatis eveniet provident repellat illo omnis dolores, sapiente laborum! Fuga incidunt iusto ipsa dolores ea id. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi unde minima minus corrupti, est architecto, ipsam ex sit ipsum rerum reiciendis voluptatibus molestiae quis exercitationem, obcaecati adipisci inventore optio! Natus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias saepe doloremque laborum autem quo perferendis error, beatae commodi nihil, iusto voluptatibus, ratione sapiente culpa rem debitis vitae asperiores reprehenderit? Quisquam? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos corporis inventore molestias magni alias hic, sequi natus iusto recusandae molestiae asperiores eius sed? Nesciunt a magni dignissimos aperiam odio amet.
                       </p>
-
                       <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro voluptatum consequuntur, quisquam assumenda fugit, iste distinctio vel deleniti numquam repudiandae dolorum atque repellendus. Incidunt nemo soluta rem eveniet id ullam?Lorem ipsum dolor sit amet, consectetur adipisicing elit. A commodi veritatis modi quam aliquid aliquam officia nisi perspiciatis reiciendis dolorum minus ipsam eveniet corrupti, dolor blanditiis, inventore ea, architecto nihil.lore Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta tempore, sequi voluptate illum officiis molestiae iure quas consectetur quaerat eligendi aut. Rem natus omnis quaerat cumque atque sapiente debitis fuga.
                       </p>
-
                       <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet consectetur sequi quasi praesentium repudiandae doloremque quia corporis totam, illum culpa aliquam accusamus aut temporibus officiis odit deleniti facere commodi? Consequuntur.lore
                       </p>
-
                       <p>
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum tempora dolor dicta autem in delectus, ratione aut ipsum inventore quibusdam, nisi laboriosam illo repellendus cum eveniet distinctio maxime atque nihil. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, alias culpa odit voluptas dignissimos perspiciatis eveniet provident repellat illo omnis dolores, sapiente laborum! Fuga incidunt iusto ipsa dolores ea id. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi unde minima minus corrupti, est architecto, ipsam ex sit ipsum rerum reiciendis voluptatibus molestiae quis exercitationem, obcaecati adipisci inventore optio! Natus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias saepe doloremque laborum autem quo perferendis error, beatae commodi nihil, iusto voluptatibus, ratione sapiente culpa rem debitis vitae asperiores reprehenderit? Quisquam? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos corporis inventore molestias magni alias hic, sequi natus iusto recusandae molestiae asperiores eius sed? Nesciunt a magni dignissimos aperiam odio amet.
                       </p>

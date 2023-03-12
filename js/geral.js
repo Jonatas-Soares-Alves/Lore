@@ -19,10 +19,12 @@ $(document).ready(function(){
     console.log(maxPages);
 
     if(!url.includes('jonatas-soares-alves.github.io') && url.includes('http://127.0.0.1/')){
-        // $('.github-enviroment').remove();
-        $('link.github-enviroment').remove();
-        $('img.github-enviroment').remove();
-        $('script.github-enviroment').attr("disabled","disabled");
+        $('.github-enviroment').remove();
+        // $('link.github-enviroment').remove();
+        // $('img.github-enviroment').remove();
+        // $('script.github-enviroment').attr("disabled","disabled");
+    }else{
+        $('.local-enviroment').remove();
     }
 
     $('.btn-prev').click(function() {

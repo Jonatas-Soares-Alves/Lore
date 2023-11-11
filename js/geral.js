@@ -31,7 +31,9 @@ $(document).ready(function(){
     }
     //+++++++++++++++ AMBIENTE +++++++++++++++
 
-    $('#audio').prop("volume", audio_volume)
+    $('#audio').prop("volume", audio_volume);
+    $('#audio').play();
+    
     $('#vol').change(function() {
         console.log('Volume', ($(this).val()/100));
         audio_volume = ($(this).val()/100);

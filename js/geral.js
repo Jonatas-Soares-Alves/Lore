@@ -6,9 +6,9 @@ var font_sizes_px = {desktop : 16, mobile : 14};
 const url = window.location.href;
 
 function changePage(){
-    console.log('-------------------');
-    console.log('#pg'+oldpage);
-    console.log('#pg'+currentPage);
+    // console.log('-------------------');
+    // console.log('#pg'+oldpage);
+    // console.log('#pg'+currentPage);
     $('#pg'+oldpage).removeClass('d-block');
     $('#pg'+oldpage).addClass('d-none');
     $('#pg'+currentPage).removeClass('d-none');
@@ -32,7 +32,7 @@ $(document).ready(function(){
     //+++++++++++++++ AMBIENTE +++++++++++++++
 
     $('#audio').prop("volume", audio_volume);
-    $('#audio').get(0).play();
+    // $('#audio').get(0).play();
 
     $('#vol').change(function() {
         console.log('Volume', ($(this).val()/100));
@@ -42,11 +42,15 @@ $(document).ready(function(){
     });
 
     $('.save-config').click(function() {
-        console.log('font_sizes_px 1', font_sizes_px)
-        font_sizes_px.desktop = parseInt($('#fonte-size').val());
-        font_sizes_px.mobile = (font_sizes_px.desktop * 0.9);
-        $(".conteudo").css("font-size", font_sizes_px.desktop+'px')
-        console.log('font_sizes_px 2', font_sizes_px)
+        if ($( window ).width() > 600) {
+            font_sizes_px.desktop = parseInt($('#fonte-size').val());
+            font_sizes_px.mobile = (font_sizes_px.desktop * 0.9);
+            $(".conteudo").css("font-size", font_sizes_px.desktop+'px');
+        }else{
+            font_sizes_px.mobile = parseInt($('#fonte-size').val());
+            font_sizes_px.desktop = (font_sizes_px.mobile * 1.1);
+            $(".conteudo").css("font-size", font_sizes_px.mobile+'px');
+        }
     });
 
     $('.btn-prev').click(function() {

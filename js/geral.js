@@ -19,16 +19,15 @@ $(document).ready(function(){
     console.log(maxPages);
     console.log(url);
 
+    //+++++++++++++++ AMBIENTE +++++++++++++++
     if(!url.includes('jonatas-soares-alves.github.io')){
         console.log('AMBIENTE LOCAL');
         $('.github-enviroment').remove();
-        // $('link.github-enviroment').remove();
-        // $('img.github-enviroment').remove();
-        // $('script.github-enviroment').attr("disabled","disabled");
     }else{
         console.log('AMBIENTE GITHUB');
         $('.local-enviroment').remove();
     }
+    //+++++++++++++++ AMBIENTE +++++++++++++++
 
     $('.btn-prev').click(function() {
         if (currentPage > 1) {

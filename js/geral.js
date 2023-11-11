@@ -17,13 +17,16 @@ function changePage(){
 $(document).ready(function(){
     maxPages = $('.page').length;
     console.log(maxPages);
+    console.log(url);
 
-    if(!url.includes('jonatas-soares-alves.github.io') && url.includes('http://127.0.0.1/')){
+    if(!url.includes('jonatas-soares-alves.github.io')){
+        console.log('AMBIENTE LOCAL');
         $('.github-enviroment').remove();
         // $('link.github-enviroment').remove();
         // $('img.github-enviroment').remove();
         // $('script.github-enviroment').attr("disabled","disabled");
     }else{
+        console.log('AMBIENTE GITHUB');
         $('.local-enviroment').remove();
     }
 

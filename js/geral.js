@@ -1,6 +1,8 @@
 var oldpage = 1;
 var currentPage = 1;
 var maxPages = 1;
+var audio_volume = (10/100);
+var font_sizes_px = {desktop : 16, mobile : 14};
 const url = window.location.href;
 
 function changePage(){
@@ -28,6 +30,22 @@ $(document).ready(function(){
         $('.local-enviroment').remove();
     }
     //+++++++++++++++ AMBIENTE +++++++++++++++
+
+    $('#audio').prop("volume", audio_volume)
+    $('#vol').change(function() {
+        console.log('Volume', ($(this).val()/100));
+        audio_volume = ($(this).val()/100);
+        $('#audio').prop("volume", audio_volume );
+        $('.volume-numero').text($(this).val());
+    });
+
+    $('.save-config').click(function() {
+        console.log('font_sizes_px 1', font_sizes_px)
+        font_sizes_px.desktop = parseInt($('#fonte-size').val());
+        font_sizes_px.mobile = (font_sizes_px.desktop * 0.9);
+        $(".conteudo").css("font-size", font_sizes_px.desktop+'px')
+        console.log('font_sizes_px 2', font_sizes_px)
+    });
 
     $('.btn-prev').click(function() {
         if (currentPage > 1) {

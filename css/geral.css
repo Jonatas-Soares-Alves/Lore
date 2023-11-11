@@ -100,7 +100,7 @@ body {
     font-family: 'titulo';
 }
 .conteudo{
-    font-size: 1rem;
+    font-size: 16px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -108,7 +108,7 @@ body {
         font-size: 30px;
     }
     .conteudo{
-        font-size: 0.9rem;
+        font-size: 14px;
     }
 }
 
@@ -160,6 +160,9 @@ input[type=number] {
 
 .modal-options-style{
     border: 1px solid var(--dark-blue-color);
+}
+.config-inputs{
+    display: inline-block;
 }
 
 .bk-midle{

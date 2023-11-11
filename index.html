@@ -26,6 +26,12 @@
         <script class="local-enviroment" type="text/javascript" src="/js/geral.js"></script>
         <script class="github-enviroment" type="text/javascript" src="https://jonatas-soares-alves.github.io/Lore/js/geral.js"></script>
 
+        <audio controls autoplay loop class="d-none audio" id="audio">
+          <source class="local-enviroment" src="audio\A_morte_solitaria_de_uma_casca_vazia.mp3" type="audio/mpeg">
+          <source class="github-enviroment" src="https://jonatas-soares-alves.github.io/Lore/audio\A_morte_solitaria_de_uma_casca_vazia.mp3" type="audio/mpeg">
+          O seu navegador não tem suporte a audio. 
+          Your browser does not support the audio element.
+        </audio>
 
         <!-- Modal -->
         <div class="modal fade" id="config-menu" tabindex="-1" role="dialog" aria-labelledby="config-menu" aria-hidden="true">
@@ -36,16 +42,26 @@
                   <span aria-hidden="true">&times;</span>
                 </button>
                 <h5 class="modal-title text-center mb-4" id="exampleModalLongTitle">Opções</h5>
-                <div class="">
-                  <p>
-                    Som Geral <br>
-                    Musica <br>
-                    Ambiente <br> <br>
-
-                    Tamanho da fonte <br>
-                  </p>
+                <div class="options my-4">
+                  <div class="row">
+                    <div class="col-6">
+                      <label for="vol">Som:</label>
+                    </div>
+                    <div class="col-6 text-right">
+                      <input class="config-inputs" type="range" id="vol" name="vol" min="0" max="100" value="10">
+                      <span class="volume-numero">10</span><span>%</span>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-6">
+                      <label for="fonte-size">Tamanho da fonte (px):</label>
+                    </div>
+                    <div class="col-6 text-right">
+                      <input class="config-inputs menu-btn" type="number" id="fonte-size" name="fonte-size" min="0" max="100" value="16">
+                    </div>
+                  </div>
                 </div>
-                <button type="button" class="menu-btn pagination-btn">Save changes</button>
+                <button type="button" class="menu-btn pagination-btn save-config">Save changes</button>
               </div>
             </div>
           </div>
